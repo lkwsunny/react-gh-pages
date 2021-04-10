@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 
 
 import "./App.css";
-import image from "./img/background1.jpg"
+import image from "./img/personal-photo.jpeg"
 
 
 
@@ -60,7 +60,7 @@ export default class App extends Component {
           <div className="image-info-container">
 
             <div className="image-container">
-              <img src={image} alt="personal photo" width="148" height="200" />
+              <img src={image} alt="personal photo" width="160" height="200" />
             </div>
 
             <div className="info-container">

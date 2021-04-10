@@ -50,6 +50,13 @@
 
 }
 
+.container .row{
+    display: flex;
+    justify-content:left;
+    align-items:center;
+}
+
+
 .education-container{
 
     margin-left: 15vh;
@@ -58,19 +65,17 @@
 
 }
 
-.container .row{
-    display: flex;
-    justify-content:left;
-    align-items:center;
-}
 
-.array-object{
+
+.education-container .array-object{
     display: flex;
     justify-content:left;
     flex-wrap: wrap-reverse;
     align-items:center;
-    
+}
 
+.education-container a{
+    margin-right: 2vh;
 }
 
 
