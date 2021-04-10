@@ -17,9 +17,9 @@ export default class App extends Component {
       cName: 'nav-links'
     },
     {
-      title: 'Contact Me',
+      title: 'Contact Mee',
       url: 'ContactMe',
-      cName: 'nav-links'
+      cName: 'nav-links' 
     },
  
   ]
