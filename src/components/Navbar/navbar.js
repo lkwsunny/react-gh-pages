@@ -14,7 +14,7 @@ class Navbar extends Component {
       return(
           
           <nav className={"NavbarItems"}>
-              <a className="logohref" href ="/"><h1 className="navbar-logo">Easy Trade</h1></a>
+              <a className="logohref" href ="/AboutMe"><h1 className="navbar-logo">Easy Trade</h1></a>
               <ul className={'nav-menu'}>
                   {this.props.menuItem.map((item, index) => {
                       return (
