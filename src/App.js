@@ -13,12 +13,12 @@ export default class App extends Component {
   Menu = [
     {
       title: 'About Me',
-      url: 'login',
+      url: '/',
       cName: 'nav-links'
     },
     {
       title: 'Contact Me',
-      url: 'aboutus',
+      url: 'ContactMe',
       cName: 'nav-links'
     },
  
@@ -34,7 +34,7 @@ export default class App extends Component {
           <div className="content">
             <Switch>
               <Route exact path="/" > <AboutMe /> </Route>
-              <Route exact path="/Contact Me" > <ContactMe /> </Route>
+              <Route exact path="/ContactMe" > <ContactMe /> </Route>
               
             </Switch>
           </div>
