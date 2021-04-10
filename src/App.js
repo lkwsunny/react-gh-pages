@@ -13,7 +13,7 @@ export default class App extends Component {
   Menu = [
     {
       title: 'About Me',
-      url: '/AboutMe',
+      url: 'AboutMe',
       cName: 'nav-links'
     },
     {
