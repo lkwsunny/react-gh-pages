@@ -28,7 +28,7 @@ export default class App extends Component {
     return (
       <Router>
         <div className="App-container">
-          <Navbar menuItem={this.login ? this.MenuItemsAfterLogin: this.MenuItemsBeforeLogin} login={this.login}
+          <Navbar menuItem={this.Menu} login={this.login}
           />
 
           <div className="content">
