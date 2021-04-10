@@ -1,53 +1,48 @@
+import React, { Component } from 'react';
 //import "bootstrap/dist/css/bootstrap.min.css";
-import { Button, Table } from 'antd';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
-import React from 'react';
-import './App.css';
 
+import Navbar from "./components/Navbar/navbar";
+import AboutMe from "./components/Aboutme/about-me";
+import ContactMe from "./components/ContactMe/contact-me"
+import "./App.css";
 
-import Navbar from "./components/Navbar/navbar"
-import AboutUs from "./components/about-us"
-import Homepage from './components/homepage/homepage'
-import CurrentItem from './currentItem'
+export default class App extends Component {
+  login = false;
 
+  Menu = [
+    {
+      title: 'About Me',
+      url: 'login',
+      cName: 'nav-links'
+    },
+    {
+      title: 'Contact Me',
+      url: 'aboutus',
+      cName: 'nav-links'
+    },
+ 
+  ]
 
-class App extends React.Component {
-  constructor() {
-    super()
-    this.state = {
-      itemstorage: []
-    }
-  }   
+  render() {
+    return (
+      <Router>
+        <div className="App-container">
+          <Navbar menuItem={this.login ? this.MenuItemsAfterLogin: this.MenuItemsBeforeLogin} login={this.login}
+          />
 
-
-    render(){
-      //console.log(this.state.itemstorage.itemName.dataIndex)
-      return (
-        <>
-        <Router>
-          <div className="App">
-            <Navbar menuItem={this.state.MenuItemsBeforeLogin}
-            />
-
-            <div className="content">
-              <Switch>
-                <Route exact path="/homepage" ><Homepage /> </Route>
-                <Route exact path="/currentItem"><CurrentItem/></Route>
-                <Route exact path="/history"> </Route>
-                <Route exact path="/nutrition"> </Route>
-                <Route exact path="/aboutus"> <AboutUs /></Route>
-
-              </Switch>
-            </div>
+          <div className="content">
+            <Switch>
+              <Route exact path="/" > <AboutMe /> </Route>
+              <Route exact path="/Contact Me" > <ContactMe /> </Route>
+              
+            </Switch>
           </div>
-        </Router>
-
-
-        </>
-
-
-      );
-    }
+        </div>
+      </Router>
+    );
   }
+}
 
-  export default App;
+
+

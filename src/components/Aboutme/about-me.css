@@ -1,4 +1,4 @@
-.about-us-container{
+.about-me-container{
     background-image: url('/src/img/background1.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -11,11 +11,11 @@
 
 }
 
-.about-us-container .content-container{
+.about-me-container .content-container{
     background-color:rgba(221, 221, 221, 0.5);
 }
 
-.about-us-container .text-container{
+.about-me-container .text-container{
     padding: 0 10% 0 10%;    
 }
 
@@ -25,7 +25,7 @@
     font-weight: 700;
 }
 
-.about-us-container .row{
+.about-me-container .row{
      display: flex;
     justify-content:center;
     flex-wrap: wrap-reverse;
@@ -33,17 +33,7 @@
     
 }
 
-.about-us-container .footnote-container{
+.about-me-container .footnote-container{
     padding: 30px;
     text-align: center;
-}
-
-@media screen and (max-width: 960px) {
-    .about-us-container .footnote-container{
-        padding:0 10% 0 10%;
-    }
-
-    .about-us-container{
-        height:135vh;
-    }
 }

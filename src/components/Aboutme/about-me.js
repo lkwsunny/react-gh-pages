@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './about-us.css';
+import './about-me.css';
 
 const google = window.google
 function initMap() {
@@ -16,12 +16,12 @@ function initMap() {
     map: map,
   });
 }
-export default class AboutUs extends Component {
+export default class AboutMe extends Component {
 
   render() {
     return (
 
-      <div className="about-us-container">
+      <div className="about-me-container">
         <div className= "content-container">
           <br></br>
           <div className="text-container">
