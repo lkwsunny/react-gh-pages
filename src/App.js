@@ -13,7 +13,7 @@ export default class App extends Component {
   Menu = [
     {
       title: 'About Me',
-      url: '/',
+      url: '/AboutMe',
       cName: 'nav-links'
     },
     {
@@ -28,12 +28,11 @@ export default class App extends Component {
     return (
       <Router>
         <div className="App-container">
-          <Navbar menuItem={this.Menu} 
-          />
+          <Navbar menuItem={this.Menu}/>
 
           <div className="content">
             <Switch>
-              <Route exact path="/" > <AboutMe /> </Route>
+              <Route exact path="/AboutMe" > <AboutMe /> </Route>
               <Route exact path="/ContactMe" > <ContactMe /> </Route>              
             </Switch>
           </div>
