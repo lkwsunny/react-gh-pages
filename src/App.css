@@ -1,4 +1,119 @@
-.App-container{
-    height: 100vh;
+.container{
+    background-image: url('/src/img/background1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    top: 5;
+    bottom: 10;
+    left: 0;
+    right: 0;
+    height:130vh;
 
 }
+
+.container .content-container{
+    background-color:rgba(221, 221, 221, 0.5);
+
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+}
+
+
+
+.container .image-info-container{
+    display: flex;
+    justify-content:left;
+    flex-wrap: wrap-reverse;
+    align-items:center;
+    margin: 0vh 0vh 0vh 15vh
+}
+
+.container .image-container{
+    height: 30vh;
+    max-width: 30vh;
+}
+
+
+.container .info-container{
+    margin-left: 10vh;
+    justify-content:left;
+}
+
+
+
+.container .text-container{
+
+    width: 100vh;
+    justify-content:flex-start;
+    align-items:flex-end;
+
+}
+
+.education-container{
+
+    margin-left: 15vh;
+    width: 80vh
+
+
+}
+
+.container .row{
+    display: flex;
+    justify-content:left;
+    align-items:center;
+}
+
+.array-object{
+    display: flex;
+    justify-content:left;
+    flex-wrap: wrap-reverse;
+    align-items:center;
+    
+
+}
+
+
+.contact-me-container{
+    margin: 10vh;
+    margin-left: 15vh;
+
+    float: right;
+    max-width: 600px;
+    width: 45vh;
+    padding: 5vh 3vh;
+    background: rgba(255, 255, 255, 0.836);
+    box-shadow: 2px 2px 5px #666;
+    align-items: center;
+}
+
+.login_page .text-field
+{
+    width: 38vh;
+}
+
+.contact-me-container input{
+    width: 90%;
+    height: 45px;
+    margin: 10px 0;
+    border: 2px solid #777;
+    outline: none;
+    padding: 0 10px;
+}
+
+.contact-me-container  button{
+    width: 150px;
+    padding: 10px 0;
+    color: white;
+    background: black;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+
+
+
+
+
