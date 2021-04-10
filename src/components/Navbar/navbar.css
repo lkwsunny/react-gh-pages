@@ -1,6 +1,6 @@
 .NavbarItems {
-    background-color: rgb(106, 212, 92);
-    height: 60px;
+    color: #fff;
+    height: 8vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,7 +14,6 @@
     color: rgb(0, 0, 0);
     justify-self: start;
     margin-left: 20px;
-    margin-top: 10px;
     cursor: pointer;
     opacity: 1;
     width: 150px;
@@ -27,14 +26,12 @@
     opacity: 1;
 }
 .NavbarItems .nav-menu{
-    color: rgb(106, 212, 92);
     display: grid;
-    grid-template-columns: repeat(5, auto);
+    grid-template-columns: repeat(4, auto);
     grid-gap: 10px;
     list-style: none;
     text-align: center;
     width: 70vw;
-    padding-top: 15px;
     justify-content: end;
     margin-right: 1rem;
     margin-bottom: 1rem;
@@ -120,7 +117,7 @@
     .NavbarItems .menu-icon {
         display: block;
         position: absolute;
-        top:-20px;
+        top:-5px;
         right: 0;
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
