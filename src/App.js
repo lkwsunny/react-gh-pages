@@ -28,14 +28,13 @@ export default class App extends Component {
     return (
       <Router>
         <div className="App-container">
-          <Navbar menuItem={this.Menu} login={this.login}
+          <Navbar menuItem={this.Menu} 
           />
 
           <div className="content">
             <Switch>
               <Route exact path="/" > <AboutMe /> </Route>
-              <Route exact path="/ContactMe" > <ContactMe /> </Route>
-              
+              <Route exact path="/ContactMe" > <ContactMe /> </Route>              
             </Switch>
           </div>
         </div>
